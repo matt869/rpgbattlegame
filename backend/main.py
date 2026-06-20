@@ -1,6 +1,7 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
-from routers.eligibility import router as eligibility_router
+from backend.routers.eligibility import router as eligibility_router
+from backend.routers.auth import router as auth_router
 
 app = FastAPI(
     title="Tulong AI",
@@ -17,6 +18,7 @@ app.add_middleware(
 )
 
 app.include_router(eligibility_router, prefix="/api/eligibility", tags=["eligibility"])
+app.include_router(auth_router, prefix="/api/auth", tags=["auth"])
 
 
 @app.get("/")

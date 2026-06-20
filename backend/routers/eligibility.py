@@ -1,11 +1,11 @@
 from fastapi import APIRouter, HTTPException
-from models.schemas import EligibilityRequest, EligibilityResponse
-from engines.rules_engine import run_all_rules
-from engines.gap_analysis import analyze_gaps, build_reasoning_trace
-from engines.conflict_detector import detect_conflicts, get_documents_needed
-from engines.ngo_router import route_to_ngos
-from services.input_parser import parse_free_text
-from services.explainer import generate_explanation
+from backend.models.schemas import EligibilityRequest, EligibilityResponse
+from backend.engines.rules_engine import run_all_rules
+from backend.engines.gap_analysis import analyze_gaps, build_reasoning_trace
+from backend.engines.conflict_detector import detect_conflicts, get_documents_needed
+from backend.engines.ngo_router import route_to_ngos
+from backend.services.input_parser import parse_free_text
+from backend.services.explainer import generate_explanation
 from pydantic import BaseModel
 from typing import Optional
 

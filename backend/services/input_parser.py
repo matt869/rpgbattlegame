@@ -2,7 +2,7 @@ import json
 import os
 import re
 import anthropic
-from models.schemas import EligibilityRequest
+from backend.models.schemas import EligibilityRequest
 
 
 def load_prompt(language: str) -> str:

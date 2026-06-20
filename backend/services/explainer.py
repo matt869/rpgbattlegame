@@ -1,6 +1,6 @@
 import os
 import anthropic
-from models.schemas import EligibilityResponse
+from backend.models.schemas import EligibilityResponse
 
 
 def load_prompt(language: str) -> str:

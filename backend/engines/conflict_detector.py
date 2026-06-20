@@ -1,7 +1,7 @@
 import json
 import os
 from typing import List
-from models.schemas import EligibilityRequest, ProgramResult, ConflictFlag
+from backend.models.schemas import EligibilityRequest, ProgramResult, ConflictFlag
 
 
 CONFLICTS_PATH = os.path.join(os.path.dirname(__file__), "..", "configs", "conflicts.json")

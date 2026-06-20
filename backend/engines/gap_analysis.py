@@ -1,5 +1,5 @@
 from typing import List
-from models.schemas import EligibilityRequest, ProgramResult
+from backend.models.schemas import EligibilityRequest, ProgramResult
 
 
 def analyze_gaps(req: EligibilityRequest, results: List[ProgramResult]) -> List[str]:

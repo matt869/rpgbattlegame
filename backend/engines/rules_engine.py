@@ -1,7 +1,7 @@
 import json
 import os
 from typing import List, Dict, Any
-from models.schemas import EligibilityRequest, ProgramResult
+from backend.models.schemas import EligibilityRequest, ProgramResult
 
 
 PROGRAMS_DIR = os.path.join(os.path.dirname(__file__), "..", "configs", "programs")
